@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-header">
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" data-mode="basic">Basic</button>
+                <button class="mode-btn" data-mode="scientific">Scientific</button>
+            </div>
+        </div>
+
+        <div class="history-wrapper">
+            <div class="history">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <button class="clear-history"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="history-content"></div>
+            </div>
+        </div>
+
+        <div class="display">
+            <div class="previous-operand"></div>
+            <div class="current-operand">0</div>
+        </div>
+
+        <div class="buttons basic-buttons">
+            <button class="special" data-action="clear">C</button>
+            <button class="special" data-action="backspace">←</button>
+            <button class="special" data-action="percent">%</button>
+            <button class="operator" data-action="/">/</button>
+            
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" data-action="*">×</button>
+            
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" data-action="-">-</button>
+            
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" data-action="+">+</button>
+            
+            <button class="number zero">0</button>
+            <button class="decimal" data-action=".">.</button>
+            <button class="equals" data-action="=">=</button>
+        </div>
+
+        <div class="buttons scientific-buttons hidden">
+            <button class="special" data-action="clear">C</button>
+            <button class="special" data-action="backspace">←</button>
+            <button class="special" data-action="percent">%</button>
+            <button class="operator" data-action="/">/</button>
+
+            <button class="function" data-action="sin">sin</button>
+            <button class="function" data-action="cos">cos</button>
+            <button class="function" data-action="tan">tan</button>
+            <button class="operator" data-action="^">^</button>
+
+            <button class="function" data-action="sqrt">√</button>
+            <button class="function" data-action="log">log</button>
+            <button class="function" data-action="ln">ln</button>
+            <button class="operator" data-action="*">×</button>
+
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" data-action="-">-</button>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" data-action="+">+</button>
+
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equals" data-action="=">=</button>
+
+            <button class="function" data-action="pi">π</button>
+            <button class="number">0</button>
+            <button class="decimal" data-action=".">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
